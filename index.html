@@ -1,151 +1,60 @@
-body {
-    margin-top: 100px;
-    min-height: calc(100vh - 100px);
-    min-width: 320px !important;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-}
+<!doctype html>
 
-body > .wrapper {
-    flex: 1
-}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
 
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100px;
-    background: #ffffff;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: center;
-    z-index: 100;
-}
+    <title>Joshua's Portfolio</title>
+    <meta name="description" content="Joshua Mendoza's Portfolio">
+    <meta name="author" content="Joshua Mendoza">
 
-header .wrapper,
-footer,
-#content {
-    padding: 0 1em;
-}
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 
-header .wrapper,
-footer {
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
 
-header .wrapper > * {
-    flex-grow: 1;
-}
-
-header .wrapper ul {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-justify-content: flex-end;
-   justify-content: flex-end;
-}
-
-.wrapper{
-    max-width: 1150px;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
-footer {
-    background-color: #f1f1f1;
-    color: #333333;
-    font-size: 0.75em;
-    padding: 1em;
-    margin-top: 60px;
-}
-
-header ul * {
-    list-style: none;
-    color: black;
-    text-decoration: none;
-}
-
-header ul a{
-    padding: 1em;
-    margin-left: 2px;
-    -webkit-transition: background-color 0.05s ease-in-out;
-    transition: background-color 0.05s ease-in-out;
-}
-
-header ul a:hover {
-    background-color:lightgreen;
-}
-
-#feature {
-    height: 300px;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    font-size: 40px;
-}
-
-.box-container {
-    display: -webkit-flex;
-    display: flex;
-    align-items: flex-start;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-justify-content: center;
-    justify-content: center;
-}
-
-.content-box {
-    height: 250px;
-    width: 300px;
-    margin: .5em;
-    display: flex;
-    display: -webkit-flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    border: 1px solid lightgreen;
-}
-
-.content-box > img {
-    width: 300px;
-    height: auto;
-}
-
-.content-box > a {
-    position: absolute;
-    height: 250px;
-    width: 300px;
-    z-index: 5;
-    opacity: .7;
-    background-color: lightgreen;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    display: flex;
-    display: -webkit-flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.content-box a:hover {
-    opacity: 0;
-}
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>Josh</h1>
+            <ul>
+                <a href="#Emails"><li>Emails</li></a>
+                <a href="#Animation"><li>Animation</li></a>
+                <a href="mailto:joshua.j.mendoza@outlook.com" target="_blank"><li>Contact Me</li></a>
+            </ul>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div id="feature">
+HI! I AM JOSHUA MENDOZA<BR/>
+PLEASE TAKE A LOOK AT MY WORK
+        </div>
+        
+        <div id="content">
+            <h3 id="Emails">Emails</h3>
+            <div class="box-container">
+                <div class="content-box"><a href="http://design.google.com/resizer/#url=http%3A%2F%2Fpirateyoshi.github.io%2Fportfolio%2Ffolio%2Femails%2FSuzuki%2FSuzuki_Service_Promise.html" target="_blank">SUZUKI</a><img src="https://github.com/PirateYoshi/portfolio/blob/gh-pages/folio/emails/Suzuki/suzuki.png?raw=true" /></div>
+                <div class="content-box"><a href="http://design.google.com/resizer/#device=window&url=http%3A%2F%2Fpirateyoshi.github.io%2Fportfolio%2Ffolio%2Femails%2FCarlsberg%2FCarlsberg.html&width=840" target="_blank">CARLSBERG</a><img src="https://github.com/PirateYoshi/portfolio/blob/gh-pages/folio/emails/Carlsberg/carls.png?raw=true" /></div>
+                <div class="content-box"><a href="http://design.google.com/resizer/#url=https%3A%2F%2Fpirateyoshi.github.io%2Fportfolio%2Ffolio%2Femails%2FRBS%2FCore_Q3-Loan-Acquisition_RBS_template.html" target="_blank">RBS</a><img src="https://github.com/PirateYoshi/portfolio/blob/gh-pages/folio/emails/RBS/rbs.png?raw=true" /></div>
+            </div>
+            <br>
+            <h3 id="Animation">HTML5 Animation</h3>
+            <div class="box-container">
+                <div class="content-box"><a href="http://design.google.com/resizer/#url=https%3A%2F%2Fpirateyoshi.github.io%2FTests%2FWired_Banner%2Findex.html" target="_blank">Wired.com:<br/>SPACE</a><img src="https://github.com/PirateYoshi/portfolio/blob/gh-pages/folio/animation/wired.png?raw=true" /></div>
+            </div>
+        </div>
+    </div>
+    <footer>&copy; 2016 JOSHUA MENDOZA ALL RIGHTS RESERVED</footer>
+    
+    <script src="js/scripts.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script>
+  jQuery("#feature").fitText(1, { minFontSize: '20px', maxFontSize: '40px' });
+</script>
+</body>
+</html>
