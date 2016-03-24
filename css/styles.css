@@ -11,9 +11,6 @@ body > .wrapper {
     flex: 1
 }
 
-/*--------------------------------------
-NAVIGATION
---------------------------------------*/
 header {
     position: fixed;
     top: 0;
@@ -82,10 +79,6 @@ header ul a:hover {
     background-color:lightgreen;
 }
 
-/*--------------------------------------
-FEATURE
---------------------------------------*/
-
 #feature {
     height: 300px;
     display: -webkit-flex;
@@ -99,7 +92,7 @@ FEATURE
     font-size: 40px;
 }
 
-#box-container {
+.box-container {
     display: -webkit-flex;
     display: flex;
     align-items: flex-start;
@@ -111,8 +104,44 @@ FEATURE
 
 .content-box {
     height: 250px;
-    min-width: 300px;
-    float: left;
-    margin: .5em
-    
+    width: 300px;
+    margin: .5em;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border: 1px solid lightgreen;
+}
+
+.content-box > img {
+    width: 300px;
+    height: auto;
+}
+
+.content-box > a {
+    position: absolute;
+    height: 250px;
+    width: 300px;
+    z-index: 5;
+    opacity: 0;
+    background-color: lightgreen;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.content-box a:hover {
+    opacity: 0.9;
 }
